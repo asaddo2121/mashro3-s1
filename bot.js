@@ -4,7 +4,7 @@ const client = new Discord.Client();
 console.log("Ready to level up!");
 
 client.on("message", async message => {
-  const prefix = config.prefix;
+const prefix = "+";
   const args = message.content.slice(prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
 
